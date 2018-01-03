@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="122078" started-at="2018-01-03T15:02:30Z" finished-at="2018-01-03T15:04:32Z">
+    <groups>
+    </groups>
+    <test name="test1" duration-ms="122078" started-at="2018-01-03T15:02:30Z" finished-at="2018-01-03T15:04:32Z">
+      <class name="testcases.WebElementTestcase">
+        <test-method status="PASS" signature="launch(java.lang.String)[pri:0, instance:testcases.WebElementTestcase@5b464ce8]" name="launch" duration-ms="5060" started-at="2018-01-03T20:32:30Z" finished-at="2018-01-03T20:32:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ie]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method status="PASS" signature="init()[pri:0, instance:testcases.WebElementTestcase@5b464ce8]" name="init" is-config="true" duration-ms="0" started-at="2018-01-03T20:32:30Z" finished-at="2018-01-03T20:32:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="WebElement()[pri:0, instance:testcases.WebElementTestcase@5b464ce8]" name="WebElement" duration-ms="34246" started-at="2018-01-03T20:32:35Z" depends-on-methods="testcases.WebElementTestcase.launch" finished-at="2018-01-03T20:33:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebElement -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.WebElementTestcase@5b464ce8]" name="closeBrowser" is-config="true" duration-ms="555" started-at="2018-01-03T20:33:10Z" finished-at="2018-01-03T20:33:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.WebElementTestcase -->
+      <class name="testcases.LoginTestcase">
+        <test-method status="PASS" signature="Launch_browser(java.lang.String)[pri:0, instance:testcases.LoginTestcase@19dfb72a]" name="Launch_browser" duration-ms="3701" started-at="2018-01-03T20:33:10Z" finished-at="2018-01-03T20:33:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ie]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launch_browser -->
+        <test-method status="PASS" signature="init()[pri:0, instance:testcases.LoginTestcase@19dfb72a]" name="init" is-config="true" duration-ms="0" started-at="2018-01-03T20:33:10Z" finished-at="2018-01-03T20:33:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:testcases.LoginTestcase@19dfb72a]" name="Login" duration-ms="77906" started-at="2018-01-03T20:33:14Z" depends-on-methods="testcases.LoginTestcase.Launch_browser" finished-at="2018-01-03T20:34:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.LoginTestcase@19dfb72a]" name="tearDown" is-config="true" duration-ms="602" started-at="2018-01-03T20:34:32Z" finished-at="2018-01-03T20:34:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.LoginTestcase -->
+      <class name="testcases.BaseTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testcases.BaseTest@30c7da1e]" name="beforeSuite" is-config="true" duration-ms="24" started-at="2018-01-03T20:32:30Z" finished-at="2018-01-03T20:32:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testcases.BaseTest@30c7da1e]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-01-03T20:34:33Z" finished-at="2018-01-03T20:34:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testcases.BaseTest -->
+    </test> <!-- test1 -->
+  </suite> <!-- Suite1 -->
+</testng-results>

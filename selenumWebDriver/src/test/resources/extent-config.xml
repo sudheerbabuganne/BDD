@@ -1,0 +1,56 @@
+<? xml version ="1.0" encoding="UTF-8" ?>
+
+<extentreports>
+
+	
+  <Configuration >
+
+
+	< !------ document encoding ------------!>
+
+	<encoding>UTF-8</encoding>
+
+	<! ---Protocol for scripts and stylesheets ----------!>
+	
+	<protocol>https</protocol>
+
+	<!----- report theme ----------------->
+
+	<!----- standard, drak-------------->
+
+	<theme>dark</theme>
+
+	<!---- title of the document---------->
+
+	<documentTitle>DND </documentTitle>
+
+	<!-------report Name -- displayed on the top ---------------!>
+
+	<reportName> My Automation Web Report </reportName>
+	
+	<!--------report headline -- displayed on the top ---------!>
+
+	<reportHeadline></reportHeadline>
+
+	<!--golbal date format override --!>
+
+	<!-- defaults to YYYY-MM-dd----!>
+
+	<dateFormat>YYYY-MM-dd</dateFormat>
+
+	<timeFormat>HH:mm:ss</timeFormat>
+
+	<!--Custom Java Script -----!>
+
+	<scripts></scripts>
+
+	<scripts></scripts>
+
+	<!-- custom Styles --!>
+	
+	<styles></styles>
+
+
+  </Configuration>
+
+</extentReports>

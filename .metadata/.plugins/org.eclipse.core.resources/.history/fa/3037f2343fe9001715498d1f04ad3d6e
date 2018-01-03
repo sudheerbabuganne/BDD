@@ -1,0 +1,99 @@
+package testcases;
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+//import com.relevantcodes.extentreports.LogStatus;
+
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+
+import webpages.LoginPage;
+
+public class LoginTestcase extends BaseTest 
+{
+	private WebDriver driver;
+	
+	public LoginPage login;
+	
+	ExtentTest logger;
+	
+	@BeforeClass
+	
+	public void launch()
+	{
+		logger=extent.startTest("Login Test case");
+		
+		logger.assignAuthor("Sudheer");
+		
+		logger.assignCategory("Smoke");
+		
+		System.setProperty("webdriver.ie.driver", "E:\\Softwares\\IEDriverServer.exe");
+		
+		driver=new InternetExplorerDriver();
+		
+		driver.manage().window().maximize();
+		
+		logger.log(LogStatus.PASS, "Maximize the browser");
+		
+		//driver.get("http://localhost/WebElement.html");
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		//test.assignAuthor("G Sudheer Babu");
+		
+		//test.assignCategory("Smoke Test");
+		
+	}
+		
+
+	
+	@Test
+	
+	public void Login()
+	{
+	
+		login=new LoginPage(driver);
+		
+		driver.get("http://localhost/loginpage.html");
+
+		logger.log(LogStatus.PASS, "navigate to the page http://localhost/loginpage.html");
+		
+		login.setUserName("sudheer");
+		
+		logger.log(LogStatus.PASS, "set user name as sudheer");
+		
+		//test.log(LogStatus.PASS, "UserName entered sucessfully");
+		
+		login.setPassword("Welcome1");
+		
+		logger.log(LogStatus.PASS, "set password as welcome1");
+		
+		//test.log(LogStatus.PASS, "password entered sucessfully");
+		
+		login.submitclick();
+		
+		logger.log(LogStatus.PASS, "click on submit button");
+		
+		//test.log(LogStatus.PASS, "submit button sucessfully");
+	
+	}
+	
+	@AfterClass
+	
+	public void tearDown()
+	{
+		
+		driver.close();
+		
+		logger.log(LogStatus.PASS, "close the browser");
+		
+		//test.log(LogStatus.PASS, "Browser closed sucessfully");
+		
+		extent.endTest(logger);
+	}
+
+
+}
